@@ -229,3 +229,40 @@ input[name=faq-item] + label span {
 .faq .faq-inner aside p {
   font-size: 24px;
 }
+
+/* Footer */
+footer {
+  padding: 50px 0;
+  font-size: 12px;
+  color: #999;
+  line-height: 1.5em;
+}
+footer .footer-inner {
+  width: 850px;
+  margin: auto;
+}
+.site-map {
+  border-bottom: 1px solid #222;
+  padding-bottom: 20px;
+}
+.site-map h6 {
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+.site-map .links {
+  overflow: hidden;
+}
+.site-map .links .items {
+  float: left;
+  width: 25%;
+  line-height: 2em;
+}
+.site-map .links .items a {
+  color: #999;
+  display: block;
+}
+.site-map .links .items a:hover {
+  text-decoration: underline;
+}
