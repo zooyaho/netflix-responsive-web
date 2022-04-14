@@ -96,12 +96,12 @@ section {
 .welcome .heading p {
   font-size: 20px;
 }
-.welcome .heading .getStarted {
+.getStarted {
   position: relative;
   display: inline-block;
 }
-.welcome .heading .getStarted input[type=email],
-.welcome .heading .getStarted button
+.getStarted input[type=email],
+.getStarted button
 {
   height: 60px;
   outline: none;
@@ -109,12 +109,12 @@ section {
   border-radius: 2px;
   vertical-align: middle; /* input,button이 다른 태그여서 어긋나므로 middle로 가운데 정렬함 */
 }
-.welcome .heading .getStarted input[type=email] {
+.getStarted input[type=email] {
   width: 450px;
   font-size: 18px;
   padding: 10px 10px 0;
 }
-.welcome .heading .getStarted input[type=email] + span {
+.getStarted input[type=email] + span {
   color: #999;
   font-size: 16px;
   position: absolute;
@@ -122,13 +122,13 @@ section {
   left: 10px;
   pointer-events: none;
 }
-.welcome .heading .getStarted input[type=email]:focus + span {
+.getStarted input[type=email]:focus + span {
   color: rgb(133, 133, 133);
   font-size: 14px;
   transform: translateY(-15px);
   transition: all .3s;
 }
-.welcome .heading .getStarted button {
+.getStarted button {
   width: 220px;
   background-color: #e50914;
   color: #fff;
@@ -167,4 +167,65 @@ section {
 }
 .preview img {
   height: 350px;
+}
+
+/* Section: FAQ */
+.faq {
+  padding: 70px 0;
+}
+.faq .faq-inner {
+  width: 850px;
+  margin:auto;
+}
+.faq .faq-inner h1 {
+  text-align: center;
+  font-size: 50px;
+  margin: 0;
+}
+.faq .faq-inner .accodion {
+  margin: 2em auto;
+}
+/* .faq .faq-inner .accodion input[type=radio] {} */
+input[name=faq-item] {
+  display: none;
+}
+/* .faq .faq-inner .accodion label {} */
+input[name=faq-item] + label {
+  display: block;
+  background-color: #303030;
+  padding: 15px;
+  cursor: pointer;
+  margin-bottom: 3px;
+}
+input[name=faq-item] + label span {
+  float: right;
+  font-size: 36px;
+  transition: 0.35s;
+}
+.faq .faq-inner .accodion .faq-content {
+  background-color: #303030;
+  padding: 0;
+  margin-bottom: 10px;
+  /* display: none; */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+
+/* Checked Function */
+.faq .faq-inner .accodion input[name=faq-item]:checked + label + .faq-content {
+  /* display: block; -> transition 사용을 못함*/
+  max-height: 500px; /* 내용 만큼 높이가 조절됨 */
+  padding: 15px;
+}
+.faq .faq-inner .accodion input[name=faq-item]:checked + label span {
+  transform: rotate(45deg);
+}
+
+.faq .faq-inner aside {
+  /* margin-top: 50px; */
+  text-align: center;
+}
+.faq .faq-inner aside p {
+  font-size: 24px;
 }
