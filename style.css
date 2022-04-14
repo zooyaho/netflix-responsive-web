@@ -1,0 +1,132 @@
+/* XEICON CDN */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  line-height: 1.6em;
+  font-size: 26px;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Header */
+header {
+  overflow: hidden;
+  padding: 35px 55px;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+header .logo {
+  float: left;
+}
+header .logo img {
+  width: 170px;
+
+}
+header .signin {
+  float: right;
+
+}
+header .signin button {
+  background-color: #e50914;
+  border: none;
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 5px;
+  text-transform: capitalize; /* 첫글자만 대문자로 변경 */
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Section : Welcome */
+.welcome {
+  height: 80vh;
+  background: url(https://assets.nflxext.com/ffe/siteui/vlv3/8459cea4-79ab-4f27-9ef0-a7c92a30a9bb/cd501dc8-44a9-4ddf-a3cf-c8158cd3052c/KR-en-20220411-popsignuptwoweeks-perspective_alpha_website_large.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+.welcome:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+}
+/* Heading */
+.welcome .heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 800px;
+}
+.welcome .heading h1 {
+  max-width: 640px;
+  font-size: 3.125rem;
+  line-height: 1.2em;
+  margin: 0 auto;
+}
+.welcome .heading h5 {
+  font-weight: normal;
+  font-size: 1.625rem;
+  max-width: 640px;
+  margin: 1rem auto;
+}
+.welcome .heading p {
+  font-size: 20px;
+}
+.welcome .heading .getStarted {
+  position: relative;
+  display: inline-block;
+}
+.welcome .heading .getStarted input[type=email],
+.welcome .heading .getStarted button
+{
+  height: 60px;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  vertical-align: middle; /* input,button이 다른 태그여서 어긋나므로 middle로 가운데 정렬함 */
+}
+.welcome .heading .getStarted input[type=email] {
+  width: 450px;
+  font-size: 18px;
+  padding: 10px 10px 0;
+}
+.welcome .heading .getStarted input[type=email] + span {
+  color: #999;
+  font-size: 16px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  pointer-events: none;
+}
+.welcome .heading .getStarted input[type=email]:focus + span {
+  color: rgb(133, 133, 133);
+  font-size: 14px;
+  transform: translateY(-15px);
+  transition: all .3s;
+}
+.welcome .heading .getStarted button {
+  width: 220px;
+  background-color: #e50914;
+  color: #fff;
+  font-size: 26px;
+  cursor: pointer;
+  margin-left: -6px;
+}
