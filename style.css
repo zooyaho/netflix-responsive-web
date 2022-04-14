@@ -50,6 +50,12 @@ header .signin button {
   font-size: 18px;
 }
 
+/* Common CSS */
+section {
+  border-bottom: 10px solid #333;
+  position: relative;
+}
+
 /* Section : Welcome */
 .welcome {
   height: 80vh;
@@ -129,4 +135,36 @@ header .signin button {
   font-size: 26px;
   cursor: pointer;
   margin-left: -6px;
+}
+
+/* Section: Enjoy, Download, Watch, Create */
+.enjoy, .download, .watch, .create {
+  height: 500px;
+}
+.inner {
+  width: 1150px;
+  margin: auto;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.inner > div {
+  float: left;
+}
+.desc {
+  padding-top: 40px;
+  width: 60%;
+}
+.desc h2 {
+  font-size: 50px;
+  line-height: 1.2em;
+}
+.preview {
+  text-align: center;
+  width: 40%;
+}
+.preview img {
+  height: 350px;
 }
