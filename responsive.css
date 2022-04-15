@@ -1,0 +1,153 @@
+@media (max-width: 768px){
+  body {
+    font-size: 16px;
+  }
+
+  /* Header */
+  header {
+    padding: 35px 20px;
+  }
+  header .logo img {
+    width: 140px;
+  }
+
+  /* Common CSS */
+  section {
+    border-bottom: 8px solid #333;
+    padding: 20px;
+  }
+
+  /* Section : Welcome */
+  .welcome {
+    height: 80vh;
+  }
+
+  /* Heading */
+  .heading {
+    width: 100%;
+    margin-top: 25px;
+  }
+  .heading h1 {
+    font-size: 30px;
+  }
+  .heading h5 {
+    font-size: 1.125rem;
+  }
+  .heading p {
+    font-size: 18px;
+    margin: auto 20px;
+    margin-bottom: 10px;
+  }
+
+  /* Getstarted */
+  .getStarted {
+    width: 90%;
+  }
+  .getStarted input[type=email] {
+    width: 100%;
+    height: 48px;
+    font-size: 14px;
+  }
+  .getStarted button {
+    height: 40px;
+    width: 150px;
+    font-size: 1rem;
+    margin-top: 15px;
+  }
+
+  /* Section: Enjoy, Download, Watch, Create */
+  .enjoy, .download, .watch, .create {
+    height: auto;
+  }
+  .inner {
+    width: 100%;
+    position: static;
+    transform: translate( 0, 0);
+  }
+
+  /* Change Order */
+  .download .inner,
+  .create .inner {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .desc {
+    padding-top: 0;
+  }
+  .desc, .preview {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .desc h2 {
+    font-size: 30px;
+    line-height: 1.2em;
+  }
+  .preview img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Section: FAQ */
+  .faq {
+    padding: 70px 20px;
+  }
+  .faq .faq-inner {
+    width: 100%;
+  }
+  .faq .faq-inner h1 {
+    font-size: 30px;
+    line-height: 1.3em;
+  }
+  input[name=faq-item] + label span {
+    font-size: 25px;
+  }
+  .faq .faq-inner aside p {
+    font-size: 18px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 50px 40px;
+  }
+  footer .footer-inner {
+    width: 100%;
+  }
+  .site-map .links .items {
+    width: 50%;
+    line-height: 2.5em;
+  }
+
+  /* Login Modal */
+  .login {
+    width: 100%;
+    height: 100%;
+    padding: 80px 30px 80px;
+    font-size: 12px;
+  }
+  .login input[type=text],
+  .login input[type=password] {
+    font-size: 14px;
+  }
+  .login input[type=text] + span,
+  .login input[type=password] + span {
+    font-size: 14px;
+  }
+  .login input[type=text]:focus + span,
+  .login input[type=password]:focus + span {
+    font-size: 11px;
+    transform: translateY(-25px);
+  }
+  .login input[type=button] {
+    font-size: 18px;
+  }
+  .login .save-info {
+    margin-top: 15px;
+  }
+  .login .save-info a {
+  }
+  .login span {
+    margin: 30px auto 20px;
+  }
+
+}

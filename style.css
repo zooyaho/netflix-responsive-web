@@ -36,7 +36,6 @@ header .logo {
 }
 header .logo img {
   width: 170px;
-
 }
 header .signin {
   float: right;
@@ -76,7 +75,7 @@ section {
   height: 100%;
 }
 /* Heading */
-.welcome .heading {
+.heading {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -84,21 +83,23 @@ section {
   text-align: center;
   width: 800px;
 }
-.welcome .heading h1 {
+.heading h1 {
   max-width: 640px;
   font-size: 3.125rem;
   line-height: 1.2em;
   margin: 0 auto;
 }
-.welcome .heading h5 {
+.heading h5 {
   font-weight: normal;
   font-size: 1.625rem;
   max-width: 640px;
   margin: 1rem auto;
 }
-.welcome .heading p {
+.heading p {
   font-size: 20px;
 }
+
+/* Getstarted */
 .getStarted {
   position: relative;
   display: inline-block;
@@ -153,7 +154,7 @@ section {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.inner > div {
+.desc, .preview {
   float: left;
 }
 .desc {
@@ -279,7 +280,7 @@ footer .footer-inner {
   width: 100%;
   height: 100%;
   z-index: 100;
-  display: none;
+  /* display: none; */
   line-height: 1em;
 }
 .login {
